@@ -1,0 +1,51 @@
+
+.dash-main {
+  margin-left: 240px;
+  padding: 30px;
+  font-family: "Poppins", sans-serif;
+  background: #f4f6fb;
+  min-height: 100vh;
+}
+
+
+.dash-cards {
+  display: flex;
+  gap: 24px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+
+.card {
+  width: 240px;
+  background: linear-gradient(135deg, #f8fafc 60%, #e0e7ff 100%);
+  padding: 28px 20px 24px 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(79,70,229,0.08);
+  transition: 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1.5px solid #e0e7ff;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 12px 32px rgba(79,70,229,0.13);
+}
+
+@media (max-width: 900px) {
+  .dash-main {
+    margin-left: 0;
+    padding: 16px;
+  }
+  .dash-cards {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .card {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+}
